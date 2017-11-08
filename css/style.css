@@ -1,0 +1,181 @@
+/* Page Style */ 
+*{
+  box-sizing: border-box;
+}
+
+body{ 
+    font: normal 1.1em/1.5 sans-serif; 
+    color: #222; 
+    background-color: #e3e5e6;
+    /*
+    width: 90%;
+    margin: auto;
+    */
+}
+/*
+.main-wrapper{
+  width: 90%;
+  margin: auto;
+}
+*/
+/* Layout Element Colors */ 
+.main-header{ background-color: #384047; } 
+.main-logo{ background-color: #5fcf80; } 
+.main-nav li{ background-color: #68dd94; } 
+.primary-content{ background-color: #abfbc9; } 
+.secondary-content{ background-color: #bbeccd; } 
+.main-footer{ background-color: #ceead8; } 
+.main-header{
+	padding: 20px;
+	float: left;
+	width: 100%;
+}
+
+/* Header, Banner, and Footer Layout */ 
+.main-logo a, 
+.main-nav a{ 
+    color: white; 
+    text-decoration: none; 
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+} 
+
+.main-logo, 
+.main-nav, 
+.main-nav li{
+  display: inline-block;
+}
+
+.main-logo,
+.main-nav{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main-logo,
+.main-nav li{
+  border-radius: 5px;
+}
+
+.main-logo{
+  width: 120px;
+}
+
+.main-nav li{
+  margin-right: 10px;
+}
+
+.main-nav{
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.main-banner{
+  background: #ebedee;
+  text-align: center;
+  padding: 35px 15px;
+  display: table;
+  width: 100%;
+}
+
+  .main-logo,
+  .main-nav li{
+    float: left;
+ }
+
+/* Column Layout */
+.col{
+	padding: 20px;
+	float: left;
+	width: 30%;
+}
+
+html,
+body,
+.main-wrapper{
+	height: 100%;
+}
+
+.primary-content{
+	width: 40%;
+}
+
+.col:last-child{
+	float: right;
+}
+/*
+.secondary-content{
+	width: 100%
+}
+
+.extra-content{
+	width: 100%;
+}
+*/
+.main-footer{
+	text-align: center;
+	padding: 20px;
+  float: bottom;
+}
+
+/* Imagery*/
+.feat-img{
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: solid 1px;
+	padding: 5px;
+}
+
+ 
+/* Clearfix */
+.group::after{
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+
+ /* Media Query */
+@media (max-width: 768px){
+  .main-logo,
+  .main-nav,
+  .main-nav li,
+  .col,
+  .feat-img{
+    display: block;
+    width: initial;
+    height: initial;
+    margin: initial;
+    float: initial;
+  }
+
+  .feat-img{
+    width: 100%;
+  }
+
+  .extra-content{
+    display: none;
+  }
+
+  .main-logo{
+    margin-right: 0;
+  }
+
+  .main-nav{
+    padding-left: initial;
+    padding-top: initial;
+  }
+  .main-nav li{
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .main-banner{
+    display: none;
+  }
+
+} 
